@@ -11,10 +11,51 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
 
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+            <a href="#" class="navbar-brand">Food, LLC</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#MenuInTheNavBar"> <!--This add the 3-line button menu in xs screens-->
+                <span class="navbar-toggler-icon"></span> <!--This add the 3-line hamburguer icon-->
+            </button>
+
+            <div class="collapse navbar-collapse" id="MenuInTheNavBar"> <!--This with 'navbar-expand-sm' is for making each 'li' to be flow-direction:row from small size creen, this also push each li to the left-->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Chicken</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Beef</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sushi</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="container">
+            <h2 class="text-center p-3">Our Menu</h1>
         </div>
-    </div>
+        <div class="container-fluid">
+            <div class="d-flex flow-direction-column">
+                <div class="bg-secondary p-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque suscipit sed
+                        unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique molestiae enim
+                        sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore
+                        cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum?
+                        Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus
+                        pariatur reiciendis harum? Similique molestiae enim sapiente dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque suscipit
+                        sed
+                        unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique molestiae enim
+                        sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore
+                        cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum?
+                        Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus
+                        pariatur reiciendis harum? Similique molestiae enim sapiente dolor.</p>
+                </div>
+            </div>
+        </div>
+    
+        </div>
 
 
 
@@ -23,4 +64,5 @@
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
