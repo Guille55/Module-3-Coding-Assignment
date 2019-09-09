@@ -1,0 +1,49 @@
+div.bg-secondary.p-3 {
+    text-align: justify;
+}
+
+.navbar img {
+    height: 100px;
+}
+.navbar li {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    div.row > div:nth-child(3) { 
+    margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    div.row > div {
+    margin-bottom: 15px;
+    }
+    div.row > div:last-child { 
+    margin-bottom: 0px;
+    }
+}
+
+/* Footer */
+
+.navbar.fixed-bottom {
+font-family: "Roboto";
+text-transform: uppercase;
+letter-spacing: 2px;
+line-height: 1.5;
+padding-left: 30px;
+
+}
+.site-nav a {
+    color: white;
+}
+
+.row {
+    margin-bottom: 85px;
+}
+.navbar.fixed-bottom div .navbar-nav li {
+    font-size: 0.9rem;
+}

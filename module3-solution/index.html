@@ -7,57 +7,145 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <title>Module 3 Assigment</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
-            <a href="#" class="navbar-brand">Food, LLC</a>
+        <nav class="navbar navbar-light bg-light navbar-expand-sm">
+            <a href="#" class="navbar-brand"><img src="images/main_logo.png" alt="Restaurant logo"></a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#MenuInTheNavBar"> <!--This add the 3-line button menu in xs screens-->
-                <span class="navbar-toggler-icon"></span> <!--This add the 3-line hamburguer icon-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#MenuInTheNavBar">
+                <!--This adds the button menu to display the 'li' navitems in xs screens-->
+                <span class="navbar-toggler-icon"></span>
+                <!--This span adds the 3-line hamburguer icon to the button-->
             </button>
 
-            <div class="collapse navbar-collapse" id="MenuInTheNavBar"> <!--This with 'navbar-expand-sm' is for making each 'li' to be flow-direction:row from small size creen, this also push each li to the left-->
+            <div class="collapse navbar-collapse" id="MenuInTheNavBar">
+                <!--This with 'navbar-expand-sm' is for making each 'li' to be flow-direction:row from small size screen, this also push each li to the left-->
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Chicken</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Beef</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sushi</a></li>
+                    <li class="nav-item .text-dark"><a href="#chicken" class="nav-link">Chicken</a></li>
+                    <li class="nav-item .text-dark"><a href="#beef" class="nav-link">Beef</a></li>
+                    <li class="nav-item .text-dark"><a href="#sushi" class="nav-link">Sushi</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- Header -->
         <div class="container">
-            <h2 class="text-center p-3">Our Menu</h1>
+            <h2 class="text-center p-3" id="Menu">Our Menu</h1>
         </div>
-        <div class="container-fluid">
-            <div class="d-flex flow-direction-column">
-                <div class="bg-secondary p-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque suscipit sed
-                        unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique molestiae enim
-                        sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore
-                        cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum?
-                        Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus
-                        pariatur reiciendis harum? Similique molestiae enim sapiente dolor.
+        <div class="container-fluid mb-4">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="bg-secondary p-3 rounded"> <!--This extra div creates space (gutter) automatically between columns-->
+                    <h4 class="text-center text-light" id="chicken">Chicken</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque
+                        suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique
+                        molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo,
+                        tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis
+                        harum?Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi
+                        possimus pariatur reiciendis harum? Similique molestiae enim sapiente dolor.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque suscipit
-                        sed
-                        unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique molestiae enim
-                        sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore
-                        cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum?
-                        Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus
-                        pariatur reiciendis harum? Similique molestiae enim sapiente dolor.</p>
-                </div>
+                        sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique
+                        molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo,
+                        tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis
+                        harum? Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi
+                        possimus pariatur reiciendis harum? Similique molestiae enim sapiente dolor.</p>
+                        <a href="#Menu" class="d-block text-center text-white">Back to top</a>
+                </div></div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="bg-secondary p-3 rounded">
+                    <h4 class="text-center text-light" id="beef">Beef</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque
+                        suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique
+                        molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo,
+                        tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis
+                        harum?Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi
+                        possimus pariatur reiciendis harum? Similique molestiae enim sapiente dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque suscipit
+                        sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique
+                        molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo,
+                        tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis
+                        harum? Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi
+                        possimus pariatur reiciendis harum? Similique molestiae enim sapiente dolor.</p>
+                        <a href="#Menu" class="d-block text-center text-white">Back to top</a>
+                </div></div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12" id="thirdColumn">
+                    <div class="bg-secondary p-3 rounded">
+                    <h4 class="text-center text-light" id="sushi">Sushi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque
+                        suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique
+                        molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo,
+                        tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis
+                        harum?Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi
+                        possimus pariatur reiciendis harum? Similique molestiae enim sapiente dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo, tempore cumque suscipit
+                        sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis harum? Similique
+                        molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo,
+                        tempore cumque suscipit sed unde vero officia eius veritatis eum quasi possimus pariatur reiciendis
+                        harum? Similique molestiae enim sapiente dolor. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Exercitationem quo, tempore cumque suscipit sed unde vero officia eius veritatis eum quasi
+                        possimus pariatur reiciendis harum? Similique molestiae enim sapiente dolor.</p>
+                        <a href="#Menu" class="d-block text-center text-white">Back to top</a>
+                </div></div>
             </div>
         </div>
-    
-        </div>
 
+        <!-- <footer class="bg-dark rounded p-4 footer">
+            <div class="container-fluid">
+            <nav class="site-nav">
+                <ul class="site-nav-menu">
+                    <li><a class="site-nav-link" href="#">Careers</a></li>
+                    <li><a class="site-nav-link" href="#">Contact</a></li>
+                    <li><a class="site-nav-link" href="#">Newsletter</a></li>
 
+                </ul>
+            </nav>
+            </div>
+        </footer> -->
+
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+            <!-- <a class="navbar-brand" href="#">Bottom navbar</a> -->
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Main Dishes <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item dropup">
+                  <a class="nav-link dropdown-toggle" href="https://getbootstrap.com/" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown10">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    </div><!-- Main container -->
 
 
     <!-- jQuery first, then Popper & Bootstrap bundle JS-->
